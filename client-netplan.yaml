@@ -1,0 +1,10 @@
+#Tareem Al Hosni: Client VM Network Configuration
+network:
+  version: 2
+  ethernets:
+    enp0s3: #Tareem Al Hosni: primary net interface
+      dhcp4: no #Tareem Al Hosni: disable DHCP
+      addresses: [192.168.0.10/24] #Tareem Al Hosni:assign stat ip
+      gateway4: 192.168.0.100 #Tareem Al Hosni:assign default gatway
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4] #Tareem Al Hosni: google dns i think?

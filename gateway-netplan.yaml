@@ -1,0 +1,12 @@
+#Tareem Al Hosni: Gateway VM Network Configuration
+network:
+  version: 2
+  ethernets:
+    enp0s3: #Tareem Al Hosni:Client-side network
+      dhcp4: no #Tareem Al Hosni: disable DHCP
+      addresses: [192.168.0.100/24] #Tareem Al Hosni:IP for ClientNet
+    enp0s8: #Tareem Al Hosni:Server-side network
+      dhcp4: no #Tareem Al Hosni: disable DHCP
+      addresses: [10.0.0.100/8] #Tareem Al Hosni: IP for servNet
+    enp0s9: #Tareem Al Hosni: NAT 
+      dhcp4: yes #Tareem Al Hosni:enable DHCP
